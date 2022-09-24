@@ -1,0 +1,78 @@
+.section-sobre {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.h2-sobre {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.p-sobre {
+  position: relative;
+  font-size: 1.5rem;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0px 100px;
+  letter-spacing: 0.005rem;
+}
+.p-sobre-2 {
+  font-size: 1.5rem;
+  line-height: 40px;
+  font-weight: normal;
+  text-align: center;
+  padding: 0px 100px;
+  letter-spacing: 0.005rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+  text-decoration: none;
+  color: #e3e3e3;
+  padding: 10px 20px;
+  border: 0.5px solid #e3e3e3;
+  font-size: 1rem;
+  border-radius: 1px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1000px) {
+  .p-sobre {
+    padding: 0px 20px;
+  }
+  .p-sobre-2 {
+    padding: 0px 20px;
+  }
+  .h2-sobre {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .h2-sobre {
+    font-size: 2rem;
+  }
+  .p-sobre {
+    font-size: 1.25rem;
+    margin: 0 auto;
+  }
+  .p-sobre-2 {
+    font-size: 1.25rem;
+    margin: 0 auto;
+  }
+  .section-sobre {
+    max-width: 1200px;
+    padding: 20px 0px;
+  }
+}

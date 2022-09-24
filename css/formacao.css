@@ -1,0 +1,286 @@
+.formacao {
+  background-color: #3a3030;
+}
+
+.formacao-back {
+  max-width: 1200px;
+  padding: 30px 40px;
+  margin: 0 auto;
+}
+
+.formacao-itens-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.formacao-itens-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px 10px;
+  justify-self: start;
+}
+
+.formacao-h2 {
+  font-size: 6rem;
+}
+
+.formacao-itens-p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  color: #ababab;
+}
+
+.caixa-faculdade {
+  background-color: #231c1c;
+  padding: 20px 20px;
+  width: 200px;
+  height: 245px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 2px solid #db0e2d;
+  border-radius: 4px;
+}
+.caixas-cursos {
+  background-color: #231c1c;
+  padding: 10px 10px;
+  width: 97, 5px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 2px solid #db0e2d;
+  border-radius: 4px;
+}
+
+.caixa-faculdade h3 {
+  font-size: 0.875rem;
+}
+
+.h3-subtitulo {
+  font-size: 0.625rem;
+}
+
+.p-subtitulo-1 {
+  font-size: 1rem;
+}
+.p-subtitulo-2 {
+  font-size: 0.825rem;
+}
+
+/* Caixas - intensivos */
+
+.curso-1 {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #9c9c9c;
+}
+
+.h3-subtitulo-1 {
+  font-size: 0.625rem;
+}
+
+.curso-tipo {
+  font-size: 0.875rem;
+}
+
+/* Responsivo*/
+
+@media (max-width: 1100px) {
+  .formacao-itens-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 50px;
+    gap: 30px;
+  }
+  .formacao-itens-p1 {
+    grid-column: 1 / -1;
+  }
+  .caixas-cursos {
+    background-color: #231c1c;
+    padding: 10px 10px;
+    width: 170px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 2px solid #db0e2d;
+    border-radius: 4px;
+  }
+  .js {
+    font-size: 10px;
+  }
+  .formacao-itens-2 {
+    gap: 5px 15px;
+  }
+}
+
+@media (max-width: 950px) {
+  .formacao-itens-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 0 auto;
+    gap: 30px;
+  }
+
+  .formacao-itens-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    gap: 20px 20px;
+  }
+  .caixa-faculdade {
+    justify-self: center;
+    background-color: #231c1c;
+    padding: 20px 20px;
+    width: 570px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    border-top: 2px solid #db0e2d;
+    border-radius: 4px;
+  }
+  .caixas-cursos {
+    background-color: #231c1c;
+    padding: 10px 10px;
+    width: 170px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    border-top: 2px solid #db0e2d;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 700px) {
+  .formacao-itens-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 0 auto;
+    gap: 30px;
+  }
+
+  .formacao-itens-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
+  }
+  .caixa-faculdade {
+    justify-self: center;
+    background-color: #231c1c;
+    padding: 10px 10px;
+    width: 450px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    border-top: 2px solid #db0e2d;
+    border-radius: 4px;
+  }
+  .caixas-cursos {
+    background-color: #231c1c;
+    padding: 10px 10px;
+    width: 205px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    border-top: 2px solid #db0e2d;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .formacao-h2 {
+    font-size: 3.8rem;
+  }
+  .formacao-itens-p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #ababab;
+  }
+  .caixa-faculdade {
+    justify-self: center;
+    background-color: #231c1c;
+    padding: 10px 10px;
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    border-top: 2px solid #db0e2d;
+    border-radius: 4px;
+  }
+  .caixas-cursos {
+    background-color: #231c1c;
+    padding: 10px 10px;
+    width: 130px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    border-top: 2px solid #db0e2d;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 500px) {
+  .caixa-faculdade {
+    justify-self: center;
+    background-color: #231c1c;
+    padding: 10px 10px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    border-top: 2px solid #db0e2d;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 400px) {
+  .formacao-h2 {
+    font-size: 3.8rem;
+  }
+  .formacao-itens-p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ababab;
+    text-align: center;
+  }
+}

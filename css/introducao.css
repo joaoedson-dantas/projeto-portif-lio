@@ -1,0 +1,154 @@
+.introducao {
+  max-width: 1200px;
+  padding: 20px 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+.desenvolvedor {
+  font-weight: 400;
+  font-size: 2.25rem;
+}
+
+.introducao h1 {
+  font-size: 4.75rem;
+  margin-bottom: 30px;
+  line-height: 1.12;
+  position: relative;
+  letter-spacing: 0.075rem;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+}
+
+.introducao-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.introducao h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(/detalhes/detalhe.svg) no-repeat center;
+  position: absolute;
+  top: -5px;
+  left: -60px;
+  z-index: -1;
+}
+
+.setas {
+  margin: 50px auto;
+}
+
+.ponto {
+  color: #db0e2d;
+  display: inline-block;
+}
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  .desenvolvedor {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .introducao p {
+    font-size: 1rem;
+  }
+  .introducao h1::before {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 20px;
+    background: url(/detalhes/detalhe.svg) no-repeat center;
+    position: absolute;
+    top: 25px;
+    left: -70px;
+    z-index: -1px;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template: 1fr 2fr;
+    gap: 40px;
+  }
+  .introducao h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  .desenvolvedor {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .introducao p {
+    font-size: 1rem;
+  }
+  .introducao h1::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 20px;
+    background: url(/detalhes/detalhe.svg) no-repeat center;
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    z-index: -1px;
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .introducao {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao img {
+    grid-row: 2;
+  }
+  .introducao h1 {
+    font-size: 2.5rem;
+  }
+  .introducao-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 18px;
+  }
+  .introducao p {
+    font-size: 0.875rem;
+  }
+  .introducao-responsivo {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+  }
+  .lista-icons {
+    grid-area: 1;
+    justify-self: center;
+  }
+  .introducao h1::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 20px;
+    background: url(/detalhes/detalhe.svg) no-repeat center;
+    position: absolute;
+    top: -5px;
+    left: 6px;
+    z-index: -1px;
+    transform: rotate(90deg);
+  }
+}
