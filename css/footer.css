@@ -108,4 +108,19 @@
     grid-template-columns: 1fr;
     gap: 50px;
   }
+  .footer::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 10px;
+    background: red;
+    position: absolute;
+    transform: rotate(90deg);
+  }
+  .footer-copy {
+    font-size: 15px;
+  }
+  .footer-copy-1 {
+    font-size: 12px;
+  }
 }
